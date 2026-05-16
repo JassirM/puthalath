@@ -1237,6 +1237,101 @@ a{
     min-height:100svh;
 }
 
+/* =========================
+   PREMIUM FOOTER
+========================= */
+
+.premium-footer{
+    background:linear-gradient(135deg,#0b1120,#0f172a);
+    color:#cbd5e1;
+    padding:90px 20px 30px;
+    position:relative;
+    overflow:hidden;
+}
+
+.premium-footer h5{
+    color:#fff;
+    margin-bottom:20px;
+    font-weight:700;
+}
+
+.premium-footer p{
+    line-height:1.8;
+    color:#94a3b8;
+}
+
+/* LINKS */
+.premium-footer ul{
+    list-style:none;
+    padding:0;
+}
+
+.premium-footer ul li{
+    margin-bottom:12px;
+}
+
+.premium-footer ul li a{
+    color:#94a3b8;
+    text-decoration:none;
+    transition:.3s;
+}
+
+.premium-footer ul li a:hover{
+    color:#00c6ff;
+    padding-left:5px;
+}
+
+/* SOCIAL */
+.footer-social a{
+    display:inline-flex;
+    width:42px;
+    height:42px;
+    align-items:center;
+    justify-content:center;
+    margin-right:10px;
+    border-radius:50%;
+    background:rgba(255,255,255,0.08);
+    color:#fff;
+    transition:.3s;
+}
+
+.footer-social a:hover{
+    background:linear-gradient(135deg,#0d6efd,#00c6ff);
+    transform:translateY(-5px);
+}
+
+/* CONTACT */
+.footer-contact p{
+    margin-bottom:10px;
+}
+
+/* BOTTOM BAR */
+.footer-bottom{
+    margin-top:60px;
+    padding-top:20px;
+    border-top:1px solid rgba(255,255,255,0.1);
+    text-align:center;
+    font-size:.9rem;
+    color:#64748b;
+}
+
+/* MOBILE */
+@media(max-width:768px){
+
+    .premium-footer{
+        text-align:center;
+    }
+
+}
+
+.about-card:hover,
+.product-card:hover,
+.stat-card:hover{
+    transform:translateY(-12px) scale(1.02);
+}
+
+
+
 </style>
 
 </head>
@@ -1945,7 +2040,7 @@ Premium healthcare equipment designed for modern hospitals and clinics.
 
 <div class="product-card">
 
-<img src="Images/hospital_beds.png">
+<img src="Images/hospital_beds.png" loading="lazy">
 
 <div class="product-overlay"></div>
 
@@ -1965,7 +2060,7 @@ Premium healthcare equipment designed for modern hospitals and clinics.
 
 <div class="product-card">
 
-<img src="Images/surgical_tools.png">
+<img src="Images/surgical_tools.png" loading="lazy">
 
 <div class="product-overlay"></div>
 
@@ -1985,7 +2080,7 @@ Premium healthcare equipment designed for modern hospitals and clinics.
 
 <div class="product-card">
 
-<img src="Images/lab_equipment.png">
+<img src="Images/lab_equipment.png" loading="lazy">
 
 <div class="product-overlay"></div>
 
@@ -2005,7 +2100,7 @@ Premium healthcare equipment designed for modern hospitals and clinics.
 
 <div class="product-card">
 
-<img src="Images/wheelchair.png">
+<img src="Images/wheelchair.png" loading="lazy">
 
 <div class="product-overlay"></div>
 
@@ -2025,7 +2120,7 @@ Premium healthcare equipment designed for modern hospitals and clinics.
 
 <div class="product-card">
 
-<img src="Images/soft_collar.png">
+<img src="Images/soft_collar.png" loading="lazy">
 
 <div class="product-overlay"></div>
 
@@ -2045,7 +2140,7 @@ Premium healthcare equipment designed for modern hospitals and clinics.
 
 <div class="product-card">
 
-<img src="Images/sholder_arms_support.png">
+<img src="Images/sholder_arms_support.png" loading="lazy">
 
 <div class="product-overlay"></div>
 
@@ -2065,7 +2160,7 @@ Premium healthcare equipment designed for modern hospitals and clinics.
 
 <div class="product-card">
 
-<img src="Images/pelvic_support.png">
+<img src="Images/pelvic_support.png" loading="lazy">
 
 <div class="product-overlay"></div>
 
@@ -2085,7 +2180,7 @@ Premium healthcare equipment designed for modern hospitals and clinics.
 
 <div class="product-card">
 
-<img src="Images/calf_support.png">
+<img src="Images/calf_support.png" loading="lazy">
 
 <div class="product-overlay"></div>
 
@@ -2295,7 +2390,7 @@ Years of experience serving hospitals and healthcare providers.
 </section>
 
 <!-- FOOTER -->
-<footer id="contact">
+<!-- <footer id="contact">
 
 <div class="container">
 
@@ -2364,7 +2459,106 @@ Premium distributor of medical furniture and healthcare equipment in Kerala.
 
 </div>
 
+</footer> -->
+
+
+<footer class="premium-footer" id="contact">
+
+    <div class="container">
+
+        <div class="row g-5">
+
+        
+            <!-- BRAND -->
+<div class="col-lg-6 col-md-6">
+
+    <div class="footer-brand">
+
+        <!-- LOGO -->
+        <div class="d-flex align-items-center gap-3 mb-3">
+
+            <img src="./images/logo.jpeg"
+                 alt="Puthalath Logo"
+                 style="width:60px;height:60px;border-radius:50%;object-fit:cover;border:2px solid rgba(255,255,255,0.2);">
+
+            <h3 class="fw-bold text-white mb-0">Puthalath</h3>
+
+        </div>
+
+        <p>
+            Premium supplier of hospital furniture,
+            surgical instruments, rehabilitation products
+            and healthcare equipment across Kerala.
+        </p>
+
+        <div class="footer-social mt-4">
+
+            <a href="#"><i class="bi bi-facebook"></i></a>
+            <a href="#"><i class="bi bi-instagram"></i></a>
+            <a href="https://wa.me/919567444595"><i class="bi bi-whatsapp"></i></a>
+
+        </div>
+
+    </div>
+
+</div>
+
+            <!-- QUICK LINKS -->
+            <div class="col-lg-2 col-md-6">
+
+                <h5>Quick Links</h5>
+
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#products">Products</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+
+            </div>
+
+            <!-- PRODUCTS -->
+            <!-- <div class="col-lg-3 col-md-6">
+
+                <h5>Products</h5>
+
+                <ul>
+                    <li><a href="#">Hospital Beds</a></li>
+                    <li><a href="#">Surgical Tools</a></li>
+                    <li><a href="#">Lab Equipment</a></li>
+                    <li><a href="#">Rehabilitation Products</a></li>
+                </ul>
+
+            </div> -->
+
+            <!-- CONTACT -->
+            <div class="col-lg-4 col-md-6">
+
+                <h5>Contact Info</h5>
+
+                <div class="footer-contact">
+
+                    <p>📍 Kerala, India</p>
+                    <p>📞 +91 95674 44595</p>
+                    <p>📧 abdul.puthalath8537@gmail.com</p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- BOTTOM BAR -->
+        <div class="footer-bottom">
+
+            <p>© 2026 Puthalath Hospital Furniture. All Rights Reserved.</p>
+
+        </div>
+
+    </div>
+
 </footer>
+
 
 <!-- WHATSAPP -->
 <a href="https://wa.me/919567444595"
