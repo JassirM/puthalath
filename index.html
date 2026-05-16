@@ -874,7 +874,7 @@ footer a:hover{
 </nav>
 
 <!-- HERO -->
-<section class="hero" id="home">
+<!-- <section class="hero" id="home">
 
 <div class="hero-content" data-aos="fade-up">
 
@@ -892,6 +892,346 @@ Explore Products
 </a>
 
 </div>
+
+</section> -->
+
+<!-- HERO SECTION -->
+ <style>
+    /* =========================================
+   PREMIUM HERO SECTION
+========================================= */
+
+.hero{
+    position:relative;
+    min-height:100vh;
+    overflow:hidden;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    color:#fff;
+    padding:120px 20px 80px;
+}
+
+/* SLIDER */
+.hero-slider{
+    position:absolute;
+    inset:0;
+    z-index:1;
+}
+
+.hero-slide{
+    position:absolute;
+    inset:0;
+    background-size:cover;
+    background-position:center;
+    opacity:0;
+    transform:scale(1);
+    animation:heroSlider 16s infinite;
+}
+
+.hero-slide:nth-child(1){
+    animation-delay:0s;
+}
+
+.hero-slide:nth-child(2){
+    animation-delay:4s;
+}
+
+.hero-slide:nth-child(3){
+    animation-delay:8s;
+}
+
+.hero-slide:nth-child(4){
+    animation-delay:12s;
+}
+
+@keyframes heroSlider{
+
+    0%{
+        opacity:0;
+        transform:scale(1);
+    }
+
+    8%{
+        opacity:1;
+    }
+
+    25%{
+        opacity:1;
+        transform:scale(1.08);
+    }
+
+    33%{
+        opacity:0;
+    }
+
+    100%{
+        opacity:0;
+    }
+}
+
+/* DARK OVERLAY */
+.hero-overlay{
+    position:absolute;
+    inset:0;
+    background:
+    linear-gradient(
+        135deg,
+        rgba(2,6,23,.85),
+        rgba(15,23,42,.75)
+    );
+    z-index:2;
+}
+
+/* BLUR EFFECTS */
+.hero-blur{
+    position:absolute;
+    border-radius:50%;
+    filter:blur(120px);
+    z-index:2;
+    opacity:.3;
+}
+
+.hero-blur-1{
+    width:350px;
+    height:350px;
+    background:#0d6efd;
+    top:-100px;
+    left:-100px;
+}
+
+.hero-blur-2{
+    width:350px;
+    height:350px;
+    background:#00c6ff;
+    bottom:-120px;
+    right:-120px;
+}
+
+/* CONTENT */
+.hero-content{
+    position:relative;
+    z-index:5;
+    max-width:900px;
+    text-align:center;
+    margin:auto;
+}
+
+/* BADGE */
+.hero-badge{
+    display:inline-flex;
+    align-items:center;
+    gap:10px;
+    padding:12px 22px;
+    border-radius:50px;
+    background:rgba(255,255,255,.08);
+    border:1px solid rgba(255,255,255,.12);
+    backdrop-filter:blur(14px);
+    margin-bottom:28px;
+    font-size:.95rem;
+    font-weight:600;
+}
+
+.hero-badge i{
+    color:#00c6ff;
+}
+
+/* TITLE */
+.hero h1{
+    font-size:clamp(2.8rem,7vw,5.8rem);
+    font-weight:900;
+    line-height:1.05;
+    margin-bottom:25px;
+    letter-spacing:-2px;
+}
+
+/* PARAGRAPH */
+.hero p{
+    max-width:750px;
+    margin:auto;
+    color:#e2e8f0;
+    font-size:1.12rem;
+    line-height:1.9;
+}
+
+/* BUTTONS */
+.hero-buttons{
+    margin-top:40px;
+    display:flex;
+    gap:18px;
+    justify-content:center;
+    flex-wrap:wrap;
+}
+
+.btn-hero-primary{
+    padding:16px 34px;
+    border-radius:60px;
+    background:linear-gradient(135deg,#0d6efd,#00c6ff);
+    color:#fff;
+    text-decoration:none;
+    font-weight:700;
+    display:flex;
+    align-items:center;
+    gap:10px;
+    transition:.4s;
+    box-shadow:0 15px 40px rgba(13,110,253,.35);
+}
+
+.btn-hero-primary:hover{
+    transform:translateY(-6px);
+    color:#fff;
+}
+
+.btn-hero-outline{
+    padding:16px 34px;
+    border-radius:60px;
+    border:1px solid rgba(255,255,255,.2);
+    background:rgba(255,255,255,.05);
+    backdrop-filter:blur(10px);
+    color:#fff;
+    text-decoration:none;
+    font-weight:700;
+    transition:.4s;
+}
+
+.btn-hero-outline:hover{
+    background:#fff;
+    color:#111827;
+}
+
+/* STATS */
+.hero-stats{
+    margin-top:55px;
+    display:flex;
+    justify-content:center;
+    gap:30px;
+    flex-wrap:wrap;
+}
+
+.hero-stat{
+    min-width:160px;
+    padding:20px 25px;
+    border-radius:24px;
+    background:rgba(255,255,255,.06);
+    border:1px solid rgba(255,255,255,.08);
+    backdrop-filter:blur(14px);
+}
+
+.hero-stat h3{
+    font-size:2rem;
+    font-weight:800;
+    margin-bottom:5px;
+}
+
+.hero-stat span{
+    color:#cbd5e1;
+    font-size:.95rem;
+}
+
+/* MOBILE */
+@media(max-width:768px){
+
+    .hero{
+        padding:130px 15px 90px;
+    }
+
+    .hero h1{
+        font-size:2.5rem;
+        line-height:1.15;
+    }
+
+    .hero p{
+        font-size:.98rem;
+    }
+
+    .hero-buttons{
+        flex-direction:column;
+        align-items:center;
+    }
+
+    .btn-hero-primary,
+    .btn-hero-outline{
+        width:100%;
+        max-width:280px;
+        justify-content:center;
+    }
+
+    .hero-stat{
+        width:100%;
+        max-width:240px;
+    }
+
+}
+ </style>
+<section class="hero" id="home">
+
+    <!-- Background Slider -->
+    <div class="hero-slider">
+
+        <div class="hero-slide active"
+             style="background-image:url('Images/hospital_beds.png');"></div>
+
+        <div class="hero-slide"
+             style="background-image:url('Images/surgical_tools.png');"></div>
+
+        <div class="hero-slide"
+             style="background-image:url('Images/lab_equipment.png');"></div>
+
+        <div class="hero-slide"
+             style="background-image:url('Images/wheelchair.png');"></div>
+
+    </div>
+
+    <!-- Overlay -->
+    <div class="hero-overlay"></div>
+
+    <!-- Floating Blur -->
+    <div class="hero-blur hero-blur-1"></div>
+    <div class="hero-blur hero-blur-2"></div>
+
+    <!-- Content -->
+    <div class="container position-relative">
+
+        <div class="hero-content" data-aos="fade-up">
+
+            <!-- Small Badge -->
+            <div class="hero-badge">
+                <i class="bi bi-heart-pulse-fill"></i>
+                Trusted Healthcare Equipment Supplier
+            </div>
+
+            <!-- Main Heading -->
+            <h2>
+                Hospital Furniture <br>
+                & Surgical Equipment
+            </h2>
+
+            <!-- Subtitle -->
+            <p>
+                Delivering world-class healthcare furniture, surgical tools,
+                rehabilitation products, and medical equipment
+                for hospitals and clinics across Kerala.
+            </p>
+
+            <!-- Buttons -->
+            <div class="hero-buttons">
+
+                <a href="#products" class="btn-hero-primary">
+                    Explore Products
+                    <i class="bi bi-arrow-right"></i>
+                </a>
+
+                <a href="#contact" class="btn-hero-outline">
+                    Contact Us
+                </a>
+
+            </div>
+
+            
+
+        </div>
+
+    </div>
 
 </section>
 
