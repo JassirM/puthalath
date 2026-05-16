@@ -808,6 +808,435 @@ footer a:hover{
 
 }
 
+
+
+/* =========================================================
+   ADVANCED RESPONSIVE SYSTEM
+========================================================= */
+
+/* GLOBAL CONTAINER */
+.container{
+    width:100%;
+    padding-left:20px;
+    padding-right:20px;
+}
+
+/* 4K & ULTRA WIDE MONITOR */
+@media (min-width:1800px){
+
+    .container{
+        max-width:1650px;
+    }
+
+    .hero{
+        min-height:100vh;
+    }
+
+    .hero h1,
+    .hero h2{
+        font-size:6.5rem !important;
+        line-height:1;
+    }
+
+    .hero p{
+        font-size:1.4rem;
+        max-width:900px;
+    }
+
+    .section{
+        padding:140px 20px;
+    }
+
+    .section-title h2{
+        font-size:4rem;
+    }
+
+    .section-title p{
+        font-size:1.2rem;
+    }
+
+    .about-card,
+    .stat-card{
+        padding:50px;
+    }
+
+    .product-card img{
+        height:340px;
+    }
+
+    .parallax{
+        height:70vh;
+    }
+
+    .parallax h2{
+        font-size:4.5rem;
+    }
+
+}
+
+/* BIG DESKTOP */
+@media (min-width:1400px) and (max-width:1799px){
+
+    .container{
+        max-width:1400px;
+    }
+
+    .hero h1,
+    .hero h2{
+        font-size:5rem;
+    }
+
+    .hero p{
+        font-size:1.2rem;
+    }
+
+    .product-card img{
+        height:300px;
+    }
+
+}
+
+/* LAPTOP */
+@media (max-width:1200px){
+
+    .hero h1,
+    .hero h2{
+        font-size:4rem;
+    }
+
+    .section{
+        padding:90px 20px;
+    }
+
+    .product-card img{
+        height:240px;
+    }
+
+}
+
+/* TABLET LANDSCAPE */
+@media (max-width:992px){
+
+    .container{
+        max-width:100%;
+    }
+
+    .hero{
+        min-height:auto;
+        padding-top:140px;
+        padding-bottom:100px;
+    }
+
+    .hero-content{
+        max-width:750px;
+    }
+
+    .hero h1,
+    .hero h2{
+        font-size:3.2rem !important;
+        line-height:1.15;
+    }
+
+    .hero p{
+        font-size:1rem;
+        line-height:1.8;
+    }
+
+    .hero-buttons{
+        gap:15px;
+    }
+
+    .section{
+        padding:80px 18px;
+    }
+
+    .section-title h2{
+        font-size:2.4rem;
+    }
+
+    .about-card,
+    .stat-card{
+        padding:30px;
+    }
+
+    .product-card img{
+        height:220px;
+    }
+
+    .hero-stat{
+        min-width:140px;
+    }
+
+    .parallax{
+        background-attachment:scroll;
+        height:50vh;
+    }
+
+}
+
+/* TABLET PORTRAIT */
+@media (max-width:768px){
+
+    body{
+        overflow-x:hidden;
+    }
+
+    .container{
+        padding-left:16px;
+        padding-right:16px;
+    }
+
+    /* NAVBAR */
+    .navbar{
+        padding:12px 0 !important;
+    }
+
+    .navbar-brand{
+        max-width:75%;
+    }
+
+    .navbar-brand h5{
+        font-size:1rem;
+    }
+
+    .navbar-collapse{
+        background:#fff;
+        padding:20px;
+        margin-top:15px;
+        border-radius:20px;
+        box-shadow:0 10px 40px rgba(0,0,0,0.08);
+    }
+
+    /* HERO */
+    .hero{
+        padding-top:130px;
+        padding-bottom:80px;
+    }
+
+    .hero h1,
+    .hero h2{
+        font-size:2.5rem !important;
+        line-height:1.2;
+        letter-spacing:-1px;
+    }
+
+    .hero p{
+        font-size:.98rem;
+        line-height:1.9;
+    }
+
+    .hero-buttons{
+        flex-direction:column;
+        align-items:center;
+        width:100%;
+    }
+
+    .btn-hero-primary,
+    .btn-hero-outline{
+        width:100%;
+        max-width:320px;
+        justify-content:center;
+    }
+
+    .hero-stats{
+        gap:15px;
+    }
+
+    .hero-stat{
+        width:100%;
+        max-width:240px;
+    }
+
+    /* SECTION */
+    .section{
+        padding:70px 15px;
+    }
+
+    .section-title{
+        margin-bottom:45px;
+    }
+
+    .section-title h2{
+        font-size:2rem;
+    }
+
+    .section-title p{
+        font-size:.95rem;
+    }
+
+    /* CARDS */
+    .about-card,
+    .stat-card{
+        border-radius:22px;
+        padding:28px 22px;
+    }
+
+    /* PRODUCTS */
+    .product-card{
+        border-radius:18px;
+    }
+
+    .product-card img{
+        height:190px;
+    }
+
+    .product-content{
+        left:14px;
+        bottom:14px;
+    }
+
+    .product-content h5{
+        font-size:1rem;
+    }
+
+    /* PARALLAX */
+    .parallax{
+        height:40vh;
+        text-align:center;
+        padding:0 20px;
+    }
+
+    .parallax h2{
+        font-size:2rem;
+        line-height:1.4;
+    }
+
+    /* FOOTER */
+    footer{
+        text-align:center;
+    }
+
+    footer .d-flex{
+        justify-content:center;
+    }
+
+    /* WHATSAPP */
+    .whatsapp{
+        width:58px;
+        height:58px;
+        font-size:26px;
+        right:15px;
+        bottom:15px;
+    }
+
+}
+
+/* SMALL MOBILE */
+@media (max-width:480px){
+
+    .hero h1,
+    .hero h2{
+        font-size:2rem !important;
+    }
+
+    .hero p{
+        font-size:.92rem;
+    }
+
+    .hero-badge{
+        font-size:.8rem;
+        padding:10px 16px;
+    }
+
+    .section-title h2{
+        font-size:1.7rem;
+    }
+
+    .product-card img{
+        height:160px;
+    }
+
+    .product-content h5{
+        font-size:.9rem;
+    }
+
+    .stat-card h2{
+        font-size:2.2rem;
+    }
+
+    .parallax h2{
+        font-size:1.6rem;
+    }
+
+}
+
+/* FOLD DEVICES */
+@media (max-width:320px){
+
+    .hero h1,
+    .hero h2{
+        font-size:1.7rem !important;
+    }
+
+    .hero p{
+        font-size:.85rem;
+    }
+
+    .btn-hero-primary,
+    .btn-hero-outline{
+        padding:14px 20px;
+        font-size:.9rem;
+    }
+
+    .section-title h2{
+        font-size:1.5rem;
+    }
+
+    .navbar-brand small{
+        display:none;
+    }
+
+}
+
+/* =========================================
+   RESPONSIVE GRID IMPROVEMENT
+========================================= */
+
+.row{
+    --bs-gutter-x:1.5rem;
+    --bs-gutter-y:1.5rem;
+}
+
+/* PRODUCT GRID RESPONSIVE */
+@media (max-width:576px){
+
+    #products .col-6{
+        width:100%;
+    }
+
+}
+
+/* BETTER IMAGE RESPONSIVE */
+img{
+    max-width:100%;
+    height:auto;
+}
+
+/* FIX OVERFLOW */
+.hero,
+.section,
+footer,
+.stats-section{
+    overflow:hidden;
+}
+
+/* BETTER TOUCH */
+button,
+a{
+    -webkit-tap-highlight-color:transparent;
+}
+
+/* SMOOTH PERFORMANCE */
+.hero-slide,
+.product-card img{
+    will-change:transform;
+}
+
+/* FIX MOBILE 100VH ISSUE */
+.hero{
+    min-height:100svh;
+}
+
 </style>
 
 </head>
@@ -1307,7 +1736,141 @@ Delivering quality, innovation, and reliability for healthcare excellence.
 </section>
 
 <!-- SEO CONTENT SECTION -->
-<section class="section bg-white">
+ <style>
+    /* =========================================
+   SEO / ABOUT SECTION RESPONSIVE
+========================================= */
+
+.hero-tag{
+    display:inline-block;
+    padding:10px 20px;
+    border-radius:50px;
+    background:linear-gradient(135deg,#0d6efd,#00c6ff);
+    color:#fff;
+    font-size:.9rem;
+    font-weight:600;
+    margin-bottom:20px;
+    box-shadow:0 10px 30px rgba(13,110,253,.2);
+}
+
+.seo-section img{
+    width:100%;
+    border-radius:28px;
+    object-fit:cover;
+    transition:.5s;
+}
+
+.seo-section img:hover{
+    transform:scale(1.02);
+}
+
+.seo-content h2{
+    font-size:clamp(2rem,5vw,3.5rem);
+    font-weight:900;
+    line-height:1.2;
+    margin-bottom:25px;
+    color:#0f172a;
+}
+
+.seo-content p{
+    color:#64748b;
+    line-height:1.9;
+    font-size:1rem;
+    margin-bottom:20px;
+}
+
+/* LARGE SCREEN */
+@media(min-width:1400px){
+
+    .seo-section{
+        padding:130px 20px;
+    }
+
+    .seo-content h2{
+        font-size:4rem;
+    }
+
+    .seo-content p{
+        font-size:1.1rem;
+    }
+
+}
+
+/* TABLET */
+@media(max-width:992px){
+
+    .seo-section{
+        padding:90px 20px;
+    }
+
+    .seo-section .row{
+        gap:40px;
+    }
+
+    .seo-content{
+        text-align:center;
+    }
+
+    .seo-content h2{
+        font-size:2.7rem;
+    }
+
+    .seo-content p{
+        font-size:1rem;
+    }
+
+}
+
+/* MOBILE */
+@media(max-width:768px){
+
+    .seo-section{
+        padding:70px 15px;
+    }
+
+    .seo-section .container{
+        padding:0;
+    }
+
+    .seo-section img{
+        border-radius:22px;
+    }
+
+    .seo-content{
+        text-align:center;
+    }
+
+    .seo-content h2{
+        font-size:2rem;
+        line-height:1.3;
+    }
+
+    .seo-content p{
+        font-size:.95rem;
+        line-height:1.8;
+    }
+
+    .hero-tag{
+        font-size:.8rem;
+        padding:8px 16px;
+    }
+
+}
+
+/* SMALL MOBILE */
+@media(max-width:480px){
+
+    .seo-content h2{
+        font-size:1.7rem;
+    }
+
+    .seo-content p{
+        font-size:.9rem;
+    }
+
+}
+ </style>
+<section class="section bg-white seo-section">
 
 <div class="container">
 
