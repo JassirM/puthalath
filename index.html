@@ -2016,6 +2016,94 @@ Delivering quality, innovation, and reliability for healthcare excellence.
     }
 
 }
+
+.btn-details{
+    display:inline-flex;
+    align-items:center;
+    justify-content:center;
+    gap:8px;
+
+    padding:14px 30px;
+    background:linear-gradient(135deg,#0d6efd,#0a58ca);
+    color:#fff;
+    text-decoration:none;
+
+    border-radius:50px;
+    font-weight:600;
+    letter-spacing:0.5px;
+    font-size:16px;
+
+    transition:all 0.35s ease;
+    position:relative;
+    overflow:hidden;
+
+    box-shadow:0 8px 20px rgba(13,110,253,0.25);
+
+    width:auto;
+    max-width:100%;
+    text-align:center;
+    white-space:nowrap;
+}
+
+/* Shine Effect */
+.btn-details::before{
+    content:'';
+    position:absolute;
+    top:0;
+    left:-100%;
+    width:100%;
+    height:100%;
+    background:rgba(255,255,255,0.25);
+    transform:skewX(-25deg);
+    transition:0.6s;
+}
+
+.btn-details:hover::before{
+    left:120%;
+}
+
+/* Hover */
+.btn-details:hover{
+    transform:translateY(-4px) scale(1.03);
+    box-shadow:0 14px 30px rgba(13,110,253,0.35);
+    color:#fff;
+}
+
+/* Click */
+.btn-details:active{
+    transform:scale(0.96);
+}
+
+/* Icon Animation */
+.btn-details i{
+    transition:transform 0.3s ease;
+}
+
+.btn-details:hover i{
+    transform:translateX(4px);
+}
+
+/* Tablet */
+@media(max-width:768px){
+
+    .btn-details{
+        padding:12px 24px;
+        font-size:15px;
+    }
+
+}
+
+/* Mobile */
+@media(max-width:576px){
+
+    .btn-details{
+        width:100%;
+        padding:14px 20px;
+        font-size:14px;
+        border-radius:14px;
+    }
+
+}
  </style>
 <section class="section bg-white seo-section">
 
@@ -2100,7 +2188,9 @@ healthcare equipment designed for modern hospitals and clinics.
 
 <h5>Hospital Beds</h5>
 
-<button>View Details</button>
+<a href="hospital_bed.html" class="btn-details">
+    View Details <i class="bi bi-arrow-right"></i>
+</a>
 
 </div>
 
@@ -2120,7 +2210,9 @@ healthcare equipment designed for modern hospitals and clinics.
 
 <h5>Surgical Tools</h5>
 
-<button>View Details</button>
+<a href="hospital_bed.html" class="btn-details">
+    View Details <i class="bi bi-arrow-right"></i>
+</a>
 
 </div>
 
@@ -2140,7 +2232,9 @@ healthcare equipment designed for modern hospitals and clinics.
 
 <h5>Lab Equipment</h5>
 
-<button>View Details</button>
+<a href="hospital_bed.html" class="btn-details">
+    View Details <i class="bi bi-arrow-right"></i>
+</a>
 
 </div>
 
@@ -2160,7 +2254,9 @@ healthcare equipment designed for modern hospitals and clinics.
 
 <h5>Wheelchairs</h5>
 
-<button>View Details</button>
+<a href="hospital_bed.html" class="btn-details">
+    View Details <i class="bi bi-arrow-right"></i>
+</a>
 
 </div>
 
@@ -2180,7 +2276,9 @@ healthcare equipment designed for modern hospitals and clinics.
 
 <h5>Neck</h5>
 
-<button>View Details</button>
+<a href="hospital_bed.html" class="btn-details">
+    View Details <i class="bi bi-arrow-right"></i>
+</a>
 
 </div>
 
@@ -2200,7 +2298,9 @@ healthcare equipment designed for modern hospitals and clinics.
 
 <h5>Shoulder & Arms</h5>
 
-<button>View Details</button>
+<a href="hospital_bed.html" class="btn-details">
+    View Details <i class="bi bi-arrow-right"></i>
+</a>
 
 </div>
 
@@ -2220,7 +2320,9 @@ healthcare equipment designed for modern hospitals and clinics.
 
 <h5>Pelvic Support</h5>
 
-<button>View Details</button>
+<a href="hospital_bed.html" class="btn-details">
+    View Details <i class="bi bi-arrow-right"></i>
+</a>
 
 </div>
 
@@ -2240,7 +2342,9 @@ healthcare equipment designed for modern hospitals and clinics.
 
 <h5>Thigh knee & Calf Support</h5>
 
-<button>View Details</button>
+<a href="hospital_bed.html" class="btn-details">
+    View Details <i class="bi bi-arrow-right"></i>
+</a>
 
 </div>
 
@@ -2260,7 +2364,9 @@ healthcare equipment designed for modern hospitals and clinics.
 
 <h5>Pillow</h5>
 
-<button>View Details</button>
+<a href="hospital_bed.html" class="btn-details">
+    View Details <i class="bi bi-arrow-right"></i>
+</a>
 
 </div>
 
@@ -2280,7 +2386,9 @@ healthcare equipment designed for modern hospitals and clinics.
 
 <h5>Abdominal Supports</h5>
 
-<button>View Details</button>
+<a href="hospital_bed.html" class="btn-details">
+    View Details <i class="bi bi-arrow-right"></i>
+</a>
 
 </div>
 
@@ -2300,7 +2408,9 @@ healthcare equipment designed for modern hospitals and clinics.
 
 <h5>Ankle Supports</h5>
 
-<button>View Details</button>
+<a href="hospital_bed.html" class="btn-details">
+    View Details <i class="bi bi-arrow-right"></i>
+</a>
 
 </div>
 
@@ -2320,7 +2430,9 @@ healthcare equipment designed for modern hospitals and clinics.
 
 <h5>Wrist Thumb Finger</h5>
 
-<button>View Details</button>
+<a href="hospital_bed.html" class="btn-details">
+    View Details <i class="bi bi-arrow-right"></i>
+</a>
 
 </div>
 
@@ -2340,7 +2452,9 @@ healthcare equipment designed for modern hospitals and clinics.
 
 <h5>Posture Corretors</h5>
 
-<button>View Details</button>
+<a href="hospital_bed.html" class="btn-details">
+    View Details <i class="bi bi-arrow-right"></i>
+</a>
 
 </div>
 
@@ -2360,7 +2474,9 @@ healthcare equipment designed for modern hospitals and clinics.
 
 <h5>Lumbar Supports (Back)</h5>
 
-<button>View Details</button>
+<a href="hospital_bed.html" class="btn-details">
+    View Details <i class="bi bi-arrow-right"></i>
+</a>
 
 </div>
 
@@ -2380,7 +2496,9 @@ healthcare equipment designed for modern hospitals and clinics.
 
 <h5>Dressings & Bandages</h5>
 
-<button>View Details</button>
+<a href="hospital_bed.html" class="btn-details">
+    View Details <i class="bi bi-arrow-right"></i>
+</a>
 
 </div>
 
@@ -2400,7 +2518,9 @@ healthcare equipment designed for modern hospitals and clinics.
 
 <h5>Compression Supports</h5>
 
-<button>View Details</button>
+<a href="hospital_bed.html" class="btn-details">
+    View Details <i class="bi bi-arrow-right"></i>
+</a>
 
 </div>
 
@@ -2420,7 +2540,9 @@ healthcare equipment designed for modern hospitals and clinics.
 
 <h5>Chest Supports (CHEST)</h5>
 
-<button>View Details</button>
+<a href="hospital_bed.html" class="btn-details">
+    View Details <i class="bi bi-arrow-right"></i>
+</a>
 
 </div>
 
@@ -2442,7 +2564,9 @@ healthcare equipment designed for modern hospitals and clinics.
 
 <h5>Emergency Splints</h5>
 
-<button>View Details</button>
+<a href="hospital_bed.html" class="btn-details">
+    View Details <i class="bi bi-arrow-right"></i>
+</a>
 
 </div>
 
@@ -2463,7 +2587,9 @@ healthcare equipment designed for modern hospitals and clinics.
 
 <h5>Restraints/Tie pads</h5>
 
-<button>View Details</button>
+<a href="hospital_bed.html" class="btn-details">
+    View Details <i class="bi bi-arrow-right"></i>
+</a>
 
 </div>
 
@@ -2483,7 +2609,9 @@ healthcare equipment designed for modern hospitals and clinics.
 
 <h5>Sports Range</h5>
 
-<button>View Details</button>
+<a href="hospital_bed.html" class="btn-details">
+    View Details <i class="bi bi-arrow-right"></i>
+</a>
 
 </div>
 
@@ -2684,77 +2812,6 @@ Years of experience serving hospitals and healthcare providers.
 
 </section>
 
-<!-- FOOTER -->
-<!-- <footer id="contact">
-
-<div class="container">
-
-<div class="row g-5">
-
-<div class="col-md-4">
-
-<h4>Puthalath</h4>
-
-<p class="mt-3">
-Premium distributor of medical furniture and healthcare equipment in Kerala.
-</p>
-
-</div>
-
-<div class="col-md-4">
-
-<h5>Quick Links</h5>
-
-<div class="d-flex flex-column gap-2 mt-3">
-
-<a href="#home">Home</a>
-<a href="#about">About</a>
-<a href="#products">Products</a>
-<a href="#contact">Contact</a>
-
-</div>
-
-</div>
-
-<div class="col-md-4">
-
-<h5>Contact</h5>
-
-<p class="mt-3">
-📧 abdul.puthalath8537@gmail.com
-</p>
-
-<p>
-📞 +91 95674 44595
-</p>
-
-<p>
-📍 Kerala, India
-</p>
-
-<div class="d-flex gap-3 fs-4">
-
-<a href="#"><i class="bi bi-facebook"></i></a>
-<a href="#"><i class="bi bi-instagram"></i></a>
-<a href="https://wa.me/919567444595"><i class="bi bi-whatsapp"></i></a>
-
-</div>
-
-</div>
-
-</div>
-
-<hr class="my-5">
-
-<div class="text-center">
-
-© 2026 Puthalath Hospital Furniture. All Rights Reserved.
-
-</div>
-
-</div>
-
-</footer> -->
 
 
 <footer class="premium-footer" id="contact">
